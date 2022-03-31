@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  border: 1px solid red;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  height: calc(0.8 * 400px);
+}
+
+img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.fullName {
+  position: absolute;
+  top: 89%;
+  left: 37%;
+}
+.section {
+  /*  */
+  background-color: silver;
+  width: 300px;
+  height: calc(0.2 * 400px);
+}
+.divFooter {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+
+  padding: 5px;
+}

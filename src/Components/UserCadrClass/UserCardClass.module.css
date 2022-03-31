@@ -1,0 +1,55 @@
+.btn {
+  background-color: rgba(241, 228, 228);
+  border-color: transparent;
+  color: black;
+  border: 1px solid silver;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  top: -55px;
+}
+
+.containerCards {
+  margin: 10px;
+  width: 500px;
+  height: 600px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8%;
+  overflow: hidden;
+}
+
+.headerCards {
+  width: inherit;
+  height: calc(0.7 * 600px);
+  display: flex;
+}
+
+.headerSpan {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sectionCards {
+  background-color: silver;
+  width: inherit;
+  height: calc(0.3 * 600px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sectionDiv {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  padding: 5px;
+}

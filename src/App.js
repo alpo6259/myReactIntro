@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import UserCard from "./Components/UserCard";
+import UserCardClass from "./Components/UserCadrClass";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <UserCard
+        userInfo={{
+          fullName: "Jon Conor",
+          src: "https://www.w3schools.com/howto/img_avatar.png",
+          like: "Like",
+          subscriptions: "Subscriptions", //подписки
+          subscribers: "Subscribers",
+        }}
+      />
+      <UserCardClass
+        userInfo={{
+          fullName: "Jon Conor",
+          src: "https://www.w3schools.com/howto/img_avatar.png",
+          like: "Like",
+          subscriptions: "Subscriptions", //подписки
+          subscribers: "Subscribers",
+        }}
+      />
+    </>
   );
 }
 
